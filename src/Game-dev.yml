@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+debug:
+  enable: true
+
+spring:
+  application:
+    name: game
+
+datasource:
+  url: jdbc:mysql://localhost:3306/game
+  username: root
+  password:
+
+jpa:
+  hibernate:
+    ddl-auto: update
+
+  show-sql: true
+
+  properties:
+    hibernate:
+      format_sql: true
+      dialect: com.mysql
+
+  kafka:
+    bootstrap-servers: broker:9092
+    topic-return: returned-film
+    topic-rent: rent-film
+    group-return: group-return
+    group-rent: group-rent
+
