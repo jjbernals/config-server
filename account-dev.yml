@@ -24,10 +24,3 @@ jpa:
       format_sql: true
       dialect: com.mysql
 
-  kafka:
-    bootstrap-servers: broker:9092
-    topic-return: returned-film
-    topic-rent: rent-film
-    group-return: group-return
-    group-rent: group-rent
-
