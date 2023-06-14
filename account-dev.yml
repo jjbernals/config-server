@@ -8,19 +8,19 @@ spring:
   application:
     name: account
 
-datasource:
-  url: jdbc:mysql://localhost:3306/account
-  username: root
-  password:
+  datasource:
+    url: jdbc:mysql://localhost:3306/account
+    username: root
+    password:
 
-jpa:
-  hibernate:
-    ddl-auto: update
-
-  show-sql: true
-
-  properties:
+  jpa:
     hibernate:
-      format_sql: true
-      dialect: com.mysql
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: com.mysql
 
